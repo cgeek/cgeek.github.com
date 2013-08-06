@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>My first blog - My Octopress Blog</title>
-	<meta name="author" content="Your Name">
+	<title>My first blog - cgeek's Blog</title>
+	<meta name="author" content="cgeek">
 
 	
-	<meta name="description" content=" My First Blog ">
+	<meta name="description" content="My First Blog ｛% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %｝ Comments ｛% include post/duoshuo.html &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -15,7 +15,7 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+	<link href="/atom.xml" rel="alternate" title="cgeek's Blog" type="application/atom+xml">
 	
 	<link rel="canonical" href="http://cgeek.github.io/blog/2013/08/03/my-first-blog/">
 	<link href="/favicon.png" rel="shortcut icon">
@@ -37,11 +37,11 @@
 			<header id="header" class="inner"><div class="profilepic">	
 	<script src="/javascripts/md5.js"></script>
 	<script type="text/javascript">
-		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("cgeek.share@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
 	</script>
 </div>
-<h1><a href="/">My Octopress Blog</a></h1>
-<p class="subtitle">A blogging framework for hackers.</p>
+<h1><a href="/">cgeek's Blog</a></h1>
+<p class="subtitle">Hack for fun!</p>
 <nav id="main-nav"><ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -53,6 +53,10 @@
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/cgeek" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/cgeek" title="GitHub">GitHub</a>
 		
 		
 		
@@ -64,13 +68,6 @@
 		
 	</div>
 </nav>
-<hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
-  
-    <h2>A blogging framework for hackers.</h2>
-  
-</hgroup>
-
 </header>				
 			</div>
 		</div>	
@@ -102,10 +99,17 @@
 </div>
 
 
+
+｛% if site.duoshuo_short_name and site.duoshuo_comments == true and page.comments == true %｝
+<section>
+	<h1>Comments</h1>
+	<div id="comments" aria-live="polite">｛% include post/duoshuo.html %｝</div>
+</section>
+｛% endif %｝
 </div>
 			</div>
 			<footer id="footer" class="inner"><p>
-  Copyright &copy; 2013 - Your Name -
+  Copyright &copy; 2013 - cgeek -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -120,6 +124,18 @@ Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Sha
 
 
 
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '7828264']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 
 
 
